@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
 # Distribution / packaging
 .Python
 build/
@@ -35,19 +32,11 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
-
 # VS Code
 .vscode/
 .history/
 .idea/
 *.code-workspace
-
-# PyCharm
-.idea/
-*.iml
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -80,10 +69,3 @@ logs/
 .Trashes
 *.swp
 *~
-
-# Data
-data/raw/
-data/processed/
-
-# Reports
-reports/figures/
