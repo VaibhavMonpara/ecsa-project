@@ -15,7 +15,13 @@ print(rec_data[['Year', 'Month']].head())
 # Converting date column to datetime
 rec_data['Date'] = pd.to_datetime(rec_data['Date'])
 
-# Plot renewable energy production over time
+# EDA: Calculate distribution of a feature
+feature_distribution = rec_data['Total Renewable Energy'].describe()
+feature_distribution.to_csv('/Users/vaibhavmonpara/Documents/GitHub/ecsa-project/data/visualization/eda_results.csv')
+
+print("EDA results saved.")
+
+""" # Plot renewable energy production over time
 plt.figure(figsize=(12, 6))
 sns.lineplot(x='Date', y='Total Renewable Energy', data=rec_data)
 plt.title('Renewable Energy Production Over Time')
@@ -23,3 +29,4 @@ plt.xlabel('Date')
 plt.ylabel('Energy Production (MWh)')
 plt.grid(True)
 plt.show()
+"""
