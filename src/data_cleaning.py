@@ -12,8 +12,6 @@ def clean_data(df):
 
     return df
 
-cleaned_ers_data = clean_data(data_loading.electricity_retail_sales_data)
 cleaned_rec_data = clean_data(data_loading.renewable_energy_consumption_data)
 
-cleaned_ers_data.to_csv('/Users/vaibhavmonpara/Documents/GitHub/ecsa-project/data/processed/cleaned_electricity_retail_sales.csv', index=False)
 cleaned_rec_data.to_csv('/Users/vaibhavmonpara/Documents/GitHub/ecsa-project/data/processed/cleaned_renewable_energy_consumption.csv', index=False)
