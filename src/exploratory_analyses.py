@@ -7,13 +7,12 @@ cleaned_data_path = '/Users/vaibhavmonpara/Documents/GitHub/ecsa-project/data/pr
 rec_data = pd.read_csv(cleaned_data_path)
 print(rec_data.head())
 
-# Create a new column by combining year and month
+# Creating a new column by combining year and month
 rec_data['Date'] = pd.to_datetime(rec_data[['Year', 'Month']].assign(day=1))
 
-# Verify the new Date column
 print(rec_data[['Year', 'Month']].head())
 
-# Convert date column to datetime
+# Converting date column to datetime
 rec_data['Date'] = pd.to_datetime(rec_data['Date'])
 
 # Plot renewable energy production over time
